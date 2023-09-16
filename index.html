@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <title>Mapty : Map your workouts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+    />
+    <script
+    defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="sidebox">
+      <img src="logo.png" alt="App logo" class="applogo" />
+      <!-- <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur et
+        ratione in consectetur nostrum ab nihil non, optio debitis harum dolore
+        dolorum voluptate veniam ex officiis sit maxime, vero repudiandae.
+      </p> -->
+      <div class="form form--hidden">
+
+        <div class="form--row">
+          <label for="distance" class="form--label">Type</label>
+          <select name="type" id="type" class="form--inputtype">
+            <option value="run" >Running</option>
+            <option value="cycle">Cycling</option>
+          </select>
+        </div>
+        <div class="form--row">
+          <label for="dist">Distance</label>
+          <input type="text" class="input--distance">
+        </div>
+        <div class="form--row">
+          <label for="duration" class="form--duration">Duration</label>
+          <input type="text" class="form--inputduration">
+        </div>
+        <div class="form--row">
+          <label for="cad" class="form--cadence">cadence</label>
+          <input type="text" class="form--inputcadence">
+        </div>
+        <div class="form--row form--row--hidden">
+          <label for="cele" class="form--cadence">Elevation Gain</label>
+          <input type="text" class="form--inputelevationgain">
+        </div>
+        <!-- <button class="form--button">Ok</button> -->
+
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
