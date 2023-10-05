@@ -17,7 +17,7 @@ body{
 
 
 .form{
-    background-color: rgb(91, 90, 90);
+    background-color: rgb(92, 91, 90);
     width: 80%;
     display: block;
     margin: auto;
@@ -25,7 +25,7 @@ body{
 input[type=text]{
     width: 40%;
     /* height: 40%; */
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(205, 205, 205);
 }
 
 .form--hidden{
@@ -43,8 +43,8 @@ input[type=text]{
 
 
 #map{
-    height: 43rem;
-    width: 65%;
+    height: 42rem;
+    width: 64%;
     background-color: #aaa;
 }
 .applogo{
